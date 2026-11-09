@@ -1,2 +1,211 @@
+@charset "UTF-8";
 
 @import url('https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Artifika&display=swap');
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #e6d5bf;
+    color: #a7832d;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* TOPO */
+
+.topo {
+    text-align: center;
+    padding: 75px 20px 0;
+}
+
+.studio {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 32px;
+    letter-spacing: 9px;
+    font-weight: 600;
+}
+
+.topo h1 {
+    font-family: "Parisienne", cursive;
+    font-size: clamp(55px, 10vw, 82px);
+    font-weight: 400;
+    line-height: 1;
+}
+
+.foto-bella {
+    display: block;
+    width: 270px;
+    max-width: 80%;
+    height: 320px;
+    object-fit: cover;
+    object-position: center;
+    margin: 55px auto 85px;
+    border-radius: 48% 48% 45% 45%;
+}
+
+/* SOBRE */
+
+.sobre {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto 80px;
+    padding: 28px;
+    border: 2px solid #dfaaa9;
+    border-radius: 30px;
+
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(21px, 3.7vw, 30px);
+    font-weight: 600;
+    line-height: 1.12;
+}
+
+.sobre p + p {
+    margin-top: 32px;
+}
+
+/* SERVIÇOS */
+
+.servicos {
+    width: 90%;
+    max-width: 850px;
+    margin: 0 auto 28px;
+}
+
+.servicos h2 {
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.lista-servicos {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 50px 70px;
+    max-width: 620px;
+    margin: 0 auto;
+}
+
+.servico {
+    border: 2px solid #dfaaa9;
+    border-radius: 30px;
+    padding: 22px 18px 12px;
+    text-align: center;
+}
+
+.servico img {
+    width: 100%;
+    height: 145px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.servico h3 {
+    font-size: 22px;
+    font-weight: 400;
+    margin-top: 18px;
+}
+
+.preco {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 22px;
+}
+
+/* BOTÕES */
+
+.botao {
+    display: inline-block;
+    background: #a7832d;
+    color: white;
+    text-decoration: none;
+    border-radius: 14px;
+    padding: 8px 10px;
+    font-size: 17px;
+    white-space: nowrap;
+}
+
+/* RODAPÉ */
+
+.rodape {
+    border-top: 2px solid #a7832d;
+    text-align: center;
+    padding: 28px 15px 35px;
+    margin-top: 28px;
+}
+
+.rodape > p:first-child {
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.botao-contato {
+    min-width: 235px;
+    font-size: 22px;
+}
+
+.instagram {
+    font-size: 21px;
+    margin-top: 42px;
+}
+
+/* CELULAR */
+
+@media (max-width: 520px) {
+
+    .topo {
+        padding-top: 45px;
+    }
+
+    .foto-bella {
+        width: 230px;
+        height: 270px;
+        margin: 38px auto 55px;
+    }
+
+    .sobre {
+        padding: 20px;
+        margin-bottom: 55px;
+        border-radius: 24px;
+    }
+
+    .lista-servicos {
+        gap: 22px 14px;
+    }
+
+    .servico {
+        padding: 12px 10px;
+        border-radius: 24px;
+    }
+
+    .servico img {
+        height: 105px;
+    }
+
+    .servico h3 {
+        font-size: 17px;
+        margin-top: 12px;
+    }
+
+    .preco {
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+
+    .botao {
+        font-size: 12px;
+        padding: 8px 7px;
+    }
+
+    .servicos h2 {
+        font-size: 18px;
+    }
+
+}
+
